@@ -57,19 +57,19 @@ b += evening * 35
 b += weekend * 25
 
 //Convert to a double to display cents nicely
-let c = Double(a/100)
-let d = Double(b/100)
+let c = Double(a)
+let d = Double(b)
 
 // OUTPUT
-print("Plan A costs \(c)")
-print("Plan B costs \(d)")
+print("Plan A costs \(c/100)")
+print("Plan B costs \(d/100)")
 
 if a > b {
     print("Plan B is cheapest.")
-} else {
+}
+else if b > a {
     print("Plan A is cheapest.")
 }
-
-
-
-//work on cents
+else if b == a {
+    print("Plan A and B are the same price.")
+}
