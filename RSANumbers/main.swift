@@ -23,6 +23,12 @@ let lower = Int(readLine()!)!
 print("Enter upper limit of range")
 let upper = Int(readLine()!)!
 
+// Set the range
+let userRange = lower...upper
+
+// Initialize an RSA number counter
+var rsaCount = 0
+
 // PROCESS
 
 // Count the number of divisors in the given Number
@@ -38,13 +44,17 @@ func divisorCount(of givenNumber: Int) -> Int {
         let remainder = givenNumber % i
         
         // DEBUG output...
-        print("\(givenNumber) \\ \(i) has a remainder of \(remainder)")
+       // print("\(givenNumber) \\ \(i) has a remainder of \(remainder)")
         
         // TODO: Add some code here... we need to keep track of how many divisors there are
         if remainder == 0 {
-            
+            divisorCount += 1
         }
         
+    }
+    
+    if divisorCount == 4 {
+        rsaCount += 1
     }
     
     // Return the count of divisors
@@ -52,5 +62,11 @@ func divisorCount(of givenNumber: Int) -> Int {
     
 }
 
-// How many divisors does a number have?
-print("5 has this many divisors... \(divisorCount(of: 5))")
+for i in userRange {
+    divisorCount(of: i)
+}
+
+
+
+// How many RSA numbers does a range have?
+print("The number of RSA numbers between \(lower) and \(upper) is \(rsaCount)")
