@@ -43,27 +43,22 @@ func divisorCount(of givenNumber: Int) -> Int {
         // What is the remainder?
         let remainder = givenNumber % i
         
-        // DEBUG output...
-       // print("\(givenNumber) \\ \(i) has a remainder of \(remainder)")
-        
-        // TODO: Add some code here... we need to keep track of how many divisors there are
+        // To keep track of how many divisors there are
         if remainder == 0 {
             divisorCount += 1
         }
-        
     }
-    
-    if divisorCount == 4 {
-        rsaCount += 1
-    }
-    
     // Return the count of divisors
     return divisorCount
-    
 }
 
+
+
+//Count RSA numbers
 for i in userRange {
-    divisorCount(of: i)
+    if divisorCount(of: i) == 4 {
+        rsaCount += 1
+    }
 }
 
 
