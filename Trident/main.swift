@@ -48,7 +48,7 @@ for _ in 1...tineLength {
     // Go to next line of output
     print("")
 }
-//print bottom section
+// Print bottom section
 for _ in 1...(3 + spacing*2) {
     print("*", terminator: "")
 }

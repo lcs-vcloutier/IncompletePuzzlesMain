@@ -56,7 +56,7 @@ b += evening * 35
 // Add weekend cost
 b += weekend * 25
 
-//Convert to a double to display cents nicely
+// Convert to a double to display cents nicely
 let c = Double(a)
 let d = Double(b)
 
