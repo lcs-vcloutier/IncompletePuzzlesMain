@@ -16,18 +16,43 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
+print("SET N:")
 let n = Int(readLine()!)!
 
 // How many times should we shift?
-let k = 3
+print("SET K:")
+let k = Int(readLine()!)!
 
 // PROCESS
 
 // Shift the given number "k" number of times
 var output = n
-output += n * 10
-output += n * 10 * 10
-output += n * 10 * 10 * 10
+
+switch k {
+case 1:
+    output += n * 10
+case 2:
+    output += n * 10
+    output += n * 10 * 10
+case 3:
+    output += n * 10
+    output += n * 10 * 10
+    output += n * 10 * 10 * 10
+case 4:
+    output += n * 10
+    output += n * 10 * 10
+    output += n * 10 * 10 * 10
+    output += n * 10 * 10 * 10 * 10
+case 5:
+    output += n * 10
+    output += n * 10 * 10
+    output += n * 10 * 10 * 10
+    output += n * 10 * 10 * 10 * 10
+    output += n * 10 * 10 * 10 * 10 * 10
+default:
+    print("RERUN AND ENTER A NUMBER BETWEEN 1-5")
+}
 
 // OUTPUT
 print(output)
+
