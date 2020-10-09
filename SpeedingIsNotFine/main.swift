@@ -23,8 +23,10 @@ let limit = Int(readLine()!)!
 print("Enter the car's speed: ", terminator: "")
 let speed = Int(readLine()!)!
 
-
+// Set range for 100$ fine
 let range1 = limit+1...limit+20
+
+// Set range for 270$ fine
 let range2 = limit+21...limit+30
 
 // PROCESS AND OUTPUT
