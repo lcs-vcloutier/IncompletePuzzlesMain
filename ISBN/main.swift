@@ -4,7 +4,7 @@
 //
 //  Puzzle description available at:
 //
-//  https://www.russellgordon.ca/incomplete-puzzles/speeding-is-not-fine.pdf
+//  https://www.russellgordon.ca/incomplete-puzzles/ISBN.pdf
 //
 //  NOTE: Puzzle adapted from material provided by the University of Waterloo.
 
@@ -26,9 +26,11 @@ let first10DigitsSum = 120 - 0
 print("Digit 11? ", terminator: "")
 let digit11 = Int(readLine()!)!
 
-let digit12 = 7
+print("Digit 12? ", terminator: "")
+let digit12 = Int(readLine()!)!
 
-let digit13 = 9
+print("Digit 13? ", terminator: "")
+let digit13 = Int(readLine()!)!
 
 // PROCESS & OUTPUT
 
