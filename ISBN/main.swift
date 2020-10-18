@@ -4,7 +4,7 @@
 //
 //  Puzzle description available at:
 //
-//  https://www.russellgordon.ca/incomplete-puzzles/speeding-is-not-fine.pdf
+//  https://www.russellgordon.ca/incomplete-puzzles/isbn.pdf
 //
 //  NOTE: Puzzle adapted from material provided by the University of Waterloo.
 
