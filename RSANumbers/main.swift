@@ -16,13 +16,13 @@ print("===========")
 // INPUT
 
 // Get lower limit of range
-print("Enter lower limit of range")
-let lower = Int(readLine()!)!
-
+let lower = Int.collectInput(withPrompt: "Enter lower limit of range",
+                           minimum: 0,
+                           maximum: nil)
 // Get upper limit of range
-print("Enter upper limit of range")
-let upper = Int(readLine()!)!
-
+let upper = Int.collectInput(withPrompt: "Enter upper limit of range",
+                           minimum: 0,
+                           maximum: nil)
 // Set the range
 let userRange = lower...upper
 
