@@ -16,13 +16,14 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
-print("SET N:")
-let n = Int(readLine()!)!
+let n = Int.collectInput(withPrompt: "Enter lower limit of range",
+                           minimum: 0,
+                           maximum: nil)
 
 // How many times should we shift?
-print("SET K:")
-let k = Int(readLine()!)!
-
+let k = Int.collectInput(withPrompt: "Enter lower limit of range",
+                           minimum: 0,
+                           maximum: nil)
 // PROCESS
 
 // Shift the given number "k" number of times
