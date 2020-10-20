@@ -16,20 +16,17 @@ print("=======")
 // INPUT
 
 // Get tine length
-print("Enter tine length:")
-print("   ", terminator: "")
-let tineLength = Int(readLine()!)!
-
+let tineLength = Int.collectInput(withPrompt: "Enter tine length:",
+                           minimum: 0,
+                           maximum: 10)
 // Get tine spacing
-print("Enter tine spacing:")
-print("   ", terminator: "")
-let spacing = Int(readLine()!)!
-
+let spacing = Int.collectInput(withPrompt: "Enter tine spacing:",
+                           minimum: 0,
+                           maximum: 10)
 // Get handle spacing
-print("Enter handle length:")
-print("   ", terminator: "")
-let handle = Int(readLine()!)!
-
+let handle = Int.collectInput(withPrompt: "Enter tine handle:",
+                           minimum: 0,
+                           maximum: 10)
 // OUTPUT
 
 // Produce top of trident according to length given
