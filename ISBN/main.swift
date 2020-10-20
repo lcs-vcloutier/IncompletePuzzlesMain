@@ -22,16 +22,19 @@ let first10Digits = "9780921418"
 let first10DigitsSum = 91
 
 // Ask for the 11th digit
-print("Digit 11? ", terminator: "")
-let digit11 = Int(readLine()!)!
+let digit11 = Int.collectInput(withPrompt: "Digit 11? ",
+                           minimum: 0,
+                           maximum: nil)
 
 // Ask for the 12th digit
-print("Digit 12? ", terminator: "")
-let digit12 = Int(readLine()!)!
+let digit12 = Int.collectInput(withPrompt: "Digit 12? ",
+                           minimum: 0,
+                           maximum: nil)
 
 // Ask for the 13th digit
-print("Digit 13? ", terminator: "")
-let digit13 = Int(readLine()!)!
+let digit13 = Int.collectInput(withPrompt: "Digit 13? ",
+                           minimum: 0,
+                           maximum: nil)
 
 // PROCESS & OUTPUT
 
