@@ -93,50 +93,51 @@ for (_, column) in numbers.enumerated() {
         default:
             print("failure")
         }
-        print(testColumnValue)
+        print(testRowValue)
     }
 }
 
 //Check if the square is magic by comparing the column array with the row array
-if testRowValue == testColumnValue {
+let rowSet = Set(testRowValue)
+let columnSet = Set(testColumnValue)
+
+if rowSet.count <= 1 && rowSet.count <= 1 && rowSet == columnSet {
     print("magic")
 }
 else {
     print("not magic")
 }
 
-// Print each row and column of the array, showing values in a formatted manner
-// Iterate over the rows
-for row in 0...numbers.count - 1 {
-    
-    // Print gap (a tab character) in top-left corner and headers for columns
-    if row == 0 {
-        print("\t", terminator: "")
-        for column in 0...numbers[row].count - 1 {
-            print("\(column)\t", terminator: "")
-        }
-        print("") // Go to next line
-    }
-    
-    // Iterate over the columns
-    for column in 0...numbers[row].count - 1 {
-        
-        // Print row header
-        if column == 0 {
-            print("\(row)\t", terminator: "")
-        }
-        
-        // Print the actual number at this row and column
-        print("\(numbers[row][column])\t", terminator: "")
-        
-    }
-    
-    // Now go to the next line
-    print("")
-    
-}
-
-
-
+//// Print each row and column of the array, showing values in a formatted manner
+//// Iterate over the rows
+//for row in 0...numbers.count - 1 {
+//
+//    // Print gap (a tab character) in top-left corner and headers for columns
+//    if row == 0 {
+//        print("\t", terminator: "")
+//        for column in 0...numbers[row].count - 1 {
+//            print("\(column)\t", terminator: "")
+//        }
+//        print("") // Go to next line
+//    }
+//
+//    // Iterate over the columns
+//    for column in 0...numbers[row].count - 1 {
+//
+//        // Print row header
+//        if column == 0 {
+//            print("\(row)\t", terminator: "")
+//        }
+//
+//        // Print the actual number at this row and column
+//        print("\(numbers[row][column])\t", terminator: "")
+//
+//    }
+//
+//    // Now go to the next line
+//    print("")
+//
+//}
+//
 
 
