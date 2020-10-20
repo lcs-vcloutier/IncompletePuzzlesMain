@@ -53,8 +53,8 @@ numbers.append(line4.components(separatedBy: " "))
 
 // PROCESS & OUTPUT
 //Initialize arrays to keep track of column & row values
-var testColumnValue = [0, 0, 0, 0]
-var testRowValue = [0, 0, 0, 0]
+var columnValue = [0, 0, 0, 0]
+var rowValue = [0, 0, 0, 0]
 
 // Calculate values of each column
 for (_, row) in numbers.enumerated() {
@@ -63,17 +63,16 @@ for (_, row) in numbers.enumerated() {
         let intColumn = Int(column) ?? 0
         switch j {
         case 0 :
-            testColumnValue[0] += intColumn
+            columnValue[0] += intColumn
         case 1 :
-            testColumnValue[1] += intColumn
+            columnValue[1] += intColumn
         case 2 :
-            testColumnValue[2] += intColumn
+            columnValue[2] += intColumn
         case 3 :
-            testColumnValue[3] += intColumn
+            columnValue[3] += intColumn
         default:
             print("failure")
         }
-        print(testColumnValue)
     }
 }
 // Calculate values of each row
@@ -83,61 +82,29 @@ for (_, column) in numbers.enumerated() {
         let intRow = Int(row) ?? 0
         switch i {
         case 0 :
-            testRowValue[0] += intRow
+            rowValue[0] += intRow
         case 1 :
-            testRowValue[1] += intRow
+            rowValue[1] += intRow
         case 2 :
-            testRowValue[2] += intRow
+            rowValue[2] += intRow
         case 3 :
-            testRowValue[3] += intRow
+            rowValue[3] += intRow
         default:
             print("failure")
         }
-        print(testRowValue)
     }
 }
 
-//Check if the square is magic by comparing the column array with the row array
-let rowSet = Set(testRowValue)
-let columnSet = Set(testColumnValue)
+// Check if the square is magic
 
+// Initialize a set for each array
+let rowSet = Set(rowValue)
+let columnSet = Set(columnValue)
+
+// Check if sets have only one number & they equal eachother
 if rowSet.count <= 1 && rowSet.count <= 1 && rowSet == columnSet {
     print("magic")
 }
 else {
     print("not magic")
 }
-
-//// Print each row and column of the array, showing values in a formatted manner
-//// Iterate over the rows
-//for row in 0...numbers.count - 1 {
-//
-//    // Print gap (a tab character) in top-left corner and headers for columns
-//    if row == 0 {
-//        print("\t", terminator: "")
-//        for column in 0...numbers[row].count - 1 {
-//            print("\(column)\t", terminator: "")
-//        }
-//        print("") // Go to next line
-//    }
-//
-//    // Iterate over the columns
-//    for column in 0...numbers[row].count - 1 {
-//
-//        // Print row header
-//        if column == 0 {
-//            print("\(row)\t", terminator: "")
-//        }
-//
-//        // Print the actual number at this row and column
-//        print("\(numbers[row][column])\t", terminator: "")
-//
-//    }
-//
-//    // Now go to the next line
-//    print("")
-//
-//}
-//
-
-
