@@ -16,12 +16,13 @@ print("====================")
 // INPUT
 
 // Ask for the speed limit
-print("Enter the speed limit: ", terminator: "")
-let limit = Int(readLine()!)!
-
+let limit = Int.collectInput(withPrompt: "Enter the speed limit: ",
+                           minimum: 0,
+                           maximum: nil)
 // Ask for the speed limit
-print("Enter the car's speed: ", terminator: "")
-let speed = Int(readLine()!)!
+let speed = Int.collectInput(withPrompt: "Enter the car's speed: ",
+                           minimum: 0,
+                           maximum: nil)
 
 // Set range for 100$ fine
 let range1 = limit+1...limit+20

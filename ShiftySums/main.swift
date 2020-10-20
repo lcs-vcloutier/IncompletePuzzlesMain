@@ -16,12 +16,12 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
-let n = Int.collectInput(withPrompt: "Enter lower limit of range",
+let n = Int.collectInput(withPrompt: "SET N:",
                            minimum: 0,
                            maximum: nil)
 
 // How many times should we shift?
-let k = Int.collectInput(withPrompt: "Enter lower limit of range",
+let k = Int.collectInput(withPrompt: "SET K",
                            minimum: 0,
                            maximum: nil)
 // PROCESS
