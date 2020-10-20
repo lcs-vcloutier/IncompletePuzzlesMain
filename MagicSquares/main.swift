@@ -52,20 +52,63 @@ let line4 = readLine()!
 numbers.append(line4.components(separatedBy: " "))
 
 // PROCESS & OUTPUT
+//Initialize arrays to keep track of column & row values
+var testColumnValue = [0, 0, 0, 0]
+var testRowValue = [0, 0, 0, 0]
 
-// Print each row and column of the array
-for (i, row) in numbers.enumerated() {
+// Calculate values of each column
+for (_, row) in numbers.enumerated() {
     for (j, column) in row.enumerated() {
-        // NOTE: At this point, each value is still a string. What must you do prior to adding up the values? 
-        // HINT: Think data types.
-        print("The value at row \(i) and column \(j) is: \(column)")
+        // Convert string into workable Int
+        let intColumn = Int(column) ?? 0
+        switch j {
+        case 0 :
+            testColumnValue[0] += intColumn
+        case 1 :
+            testColumnValue[1] += intColumn
+        case 2 :
+            testColumnValue[2] += intColumn
+        case 3 :
+            testColumnValue[3] += intColumn
+        default:
+            print("failure")
+        }
+        print(testColumnValue)
     }
+}
+// Calculate values of each row
+for (_, column) in numbers.enumerated() {
+    for (i, row) in column.enumerated() {
+        // Convert string into workable Int
+        let intRow = Int(row) ?? 0
+        switch i {
+        case 0 :
+            testRowValue[0] += intRow
+        case 1 :
+            testRowValue[1] += intRow
+        case 2 :
+            testRowValue[2] += intRow
+        case 3 :
+            testRowValue[3] += intRow
+        default:
+            print("failure")
+        }
+        print(testColumnValue)
+    }
+}
+
+//Check if the square is magic by comparing the column array with the row array
+if testRowValue == testColumnValue {
+    print("magic")
+}
+else {
+    print("not magic")
 }
 
 // Print each row and column of the array, showing values in a formatted manner
 // Iterate over the rows
 for row in 0...numbers.count - 1 {
-
+    
     // Print gap (a tab character) in top-left corner and headers for columns
     if row == 0 {
         print("\t", terminator: "")
@@ -94,4 +137,6 @@ for row in 0...numbers.count - 1 {
 }
 
 
-//add value of 0,0 - 0,1 -0,2 -0,3 etc etc
+
+
+
