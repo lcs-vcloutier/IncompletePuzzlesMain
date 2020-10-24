@@ -14,6 +14,7 @@
 		0E736522252B632200F3914E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736521252B632200F3914E /* main.swift */; };
 		0E736531252B64C800F3914E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736530252B64C800F3914E /* main.swift */; };
 		0EB21DB925449AB60021BC96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB21DB825449AB60021BC96 /* main.swift */; };
+		0EB21DCD2544A3D40021BC96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB21DCC2544A3D40021BC96 /* main.swift */; };
 		0EE0D95F252563ED0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D95E252563ED0090B2E0 /* main.swift */; };
 		0EE0D96C252564CB0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D96B252564CB0090B2E0 /* main.swift */; };
 		2A821F562544A319001D35AE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE606B2253F5F43001A46B6 /* Extensions.swift */; };
@@ -90,6 +91,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0EB21DC82544A3D40021BC96 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		0EE0D95A252563ED0090B2E0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +135,8 @@
 		0E736530252B64C800F3914E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0EB21DB625449AB60021BC96 /* ChipsFastFood */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChipsFastFood; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB21DB825449AB60021BC96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0EB21DCA2544A3D40021BC96 /* IconScaling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IconScaling; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB21DCC2544A3D40021BC96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0EE0D95C252563ED0090B2E0 /* Trident */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Trident; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0D95E252563ED0090B2E0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0EE0D969252564CB0090B2E0 /* TheCellSell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheCellSell; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +188,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0EB21DB325449AB60021BC96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB21DC72544A3D40021BC96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,6 +274,14 @@
 			path = ChipsFastFood;
 			sourceTree = "<group>";
 		};
+		0EB21DCB2544A3D40021BC96 /* IconScaling */ = {
+			isa = PBXGroup;
+			children = (
+				0EB21DCC2544A3D40021BC96 /* main.swift */,
+			);
+			path = IconScaling;
+			sourceTree = "<group>";
+		};
 		0EE0D943252563B00090B2E0 = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +295,7 @@
 				0E41A57F252F343100F2CECF /* ISBN */,
 				0E41A5AE2537209E00F2CECF /* MagicSquares */,
 				0EB21DB725449AB60021BC96 /* ChipsFastFood */,
+				0EB21DCB2544A3D40021BC96 /* IconScaling */,
 				0EE0D94D252563B00090B2E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -284,6 +312,7 @@
 				0E41A57E252F343100F2CECF /* ISBN */,
 				0E41A5AD2537209E00F2CECF /* MagicSquares */,
 				0EB21DB625449AB60021BC96 /* ChipsFastFood */,
+				0EB21DCA2544A3D40021BC96 /* IconScaling */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,6 +455,23 @@
 			productReference = 0EB21DB625449AB60021BC96 /* ChipsFastFood */;
 			productType = "com.apple.product-type.tool";
 		};
+		0EB21DC92544A3D40021BC96 /* IconScaling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB21DCE2544A3D40021BC96 /* Build configuration list for PBXNativeTarget "IconScaling" */;
+			buildPhases = (
+				0EB21DC62544A3D40021BC96 /* Sources */,
+				0EB21DC72544A3D40021BC96 /* Frameworks */,
+				0EB21DC82544A3D40021BC96 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IconScaling;
+			productName = IconScaling;
+			productReference = 0EB21DCA2544A3D40021BC96 /* IconScaling */;
+			productType = "com.apple.product-type.tool";
+		};
 		0EE0D95B252563ED0090B2E0 /* Trident */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EE0D960252563ED0090B2E0 /* Build configuration list for PBXNativeTarget "Trident" */;
@@ -490,6 +536,9 @@
 					0EB21DB525449AB60021BC96 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
+					0EB21DC92544A3D40021BC96 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					0EE0D95B252563ED0090B2E0 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -520,6 +569,7 @@
 				0E41A57D252F343100F2CECF /* ISBN */,
 				0E41A5AC2537209E00F2CECF /* MagicSquares */,
 				0EB21DB525449AB60021BC96 /* ChipsFastFood */,
+				0EB21DC92544A3D40021BC96 /* IconScaling */,
 			);
 		};
 /* End PBXProject section */
@@ -584,6 +634,14 @@
 			files = (
 				0EB21DB925449AB60021BC96 /* main.swift in Sources */,
 				2A821F562544A319001D35AE /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB21DC62544A3D40021BC96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB21DCD2544A3D40021BC96 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +784,24 @@
 			name = Debug;
 		};
 		0EB21DBB25449AB60021BC96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0EB21DCF2544A3D40021BC96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0EB21DD02544A3D40021BC96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -947,6 +1023,15 @@
 			buildConfigurations = (
 				0EB21DBA25449AB60021BC96 /* Debug */,
 				0EB21DBB25449AB60021BC96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EB21DCE2544A3D40021BC96 /* Build configuration list for PBXNativeTarget "IconScaling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB21DCF2544A3D40021BC96 /* Debug */,
+				0EB21DD02544A3D40021BC96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
