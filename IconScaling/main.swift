@@ -25,7 +25,7 @@ var icon: [[String]] =  [
 // INPUT
 
 // Get the value of k
-
+let k = Int.collectInput(withPrompt: "", minimum: 0, maximum: 25)
 
 // PROCESS & OUTPUT
 // Show the enlarged icon
