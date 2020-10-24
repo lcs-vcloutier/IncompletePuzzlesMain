@@ -20,11 +20,6 @@ var icon: [[String]] =  [
                             ["*", " ", "*"],
                         ]
 
-// NOTE: Before attempting this puzzle, it is recommended that you
-//       have successfully completed the MagicSquares puzzle (or at
-//       a minimum, read over the example code given for MagicSquares
-//       and tried it out.
-
 // HINT: Think loops.
 
 // INPUT
