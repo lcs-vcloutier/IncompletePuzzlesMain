@@ -20,9 +20,11 @@ print("Welcome to Chip's Fast Food Emporium")
 // INPUT
 
 // Get burger choice
-// NOTE: Remember to add Extensions.swift as a file that will be compiled for the ChipsFastFood target.
+// NOTE: Remember to add Extensions.swift as a file that will be compiled
+//       for the ChipsFastFood target.
 //
 //       Here is how to do that:
+//
 //       Select the blue IncompletePuzzles project file.
 //       Then select the ChipsFastFood target.
 //       Then select Build Phases from the tabs in the middle of the screen.
