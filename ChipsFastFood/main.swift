@@ -29,16 +29,16 @@ let dessert = Int.collectInput(withPrompt: "Please enter a dessert choice:", min
 
 // PROCESS
 // Get burger calories
-let burgerCalorie = 0
+let burgerCalorie = [1: 461, 2: 431, 3: 420, 4: 0]
 // Get drink calories
-let drinkCalorie = 0
+let drinkCalorie = [1: 130, 2: 160, 3: 118, 4: 0]
 // Get side calories
-let sideCalorie = 0
+let sideCalorie = [1: 100, 2: 57, 3: 70, 4: 0]
 // Get dessert calories
-let dessertCalorie = 0
+let dessertCalorie = [1: 167, 2: 266, 3: 75, 4: 0]
 
 // Get total calorie count
-let totalCalorieCount = burgerCalorie + drinkCalorie + sideCalorie + dessertCalorie
+let totalCalorieCount = burgerCalorie[burger]! + drinkCalorie[drink]! + sideCalorie[side]! + dessertCalorie[dessert]!
 
 // OUTPUT
 // Show the calories total for the choices made by the user.
