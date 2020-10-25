@@ -15,23 +15,27 @@ print("============")
 
 // Set the icon to be scaled
 var icon: [[String]] =  [
-                            ["*", "x", "*"],
-                            [" ", "x", "x"],
-                            ["*", " ", "*"],
-                        ]
+    ["*", "x", "*"],
+    [" ", "x", "x"],
+    ["*", " ", "*"],
+]
 
-// HINT: Think loops.
 
 // INPUT
-
 // Get the value of k
-let k = Int.collectInput(withPrompt: "", minimum: 0, maximum: 25)
+let k = Int.collectInput(withPrompt: "Set K:", minimum: 0, maximum: 25)
 
 // PROCESS & OUTPUT
-// Show the enlarged icon
 
-// DEBUG
-// Print the top-left corner
-print("Character at top-left corner is: \(icon[0][0])")
-print("Character at middle-right corner is: \(icon[1][2])")
-print("Character at bottom-middle corner is: \(icon[2][1])")
+// Show the enlarged icon
+for (_, row) in icon.enumerated() {
+    for _ in 1...k {
+        for (_, column) in row.enumerated() {
+                for _ in 1...k {
+                    print(column, terminator: "")
+                }
+            }
+        // Go to a new line
+        print("")
+    }
+}
