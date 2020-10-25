@@ -32,6 +32,7 @@ for (_, row) in icon.enumerated() {
     for _ in 1...k {
         for (_, column) in row.enumerated() {
                 for _ in 1...k {
+                    // Print actual character
                     print(column, terminator: "")
                 }
             }
