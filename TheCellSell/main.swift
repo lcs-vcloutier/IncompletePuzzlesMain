@@ -25,7 +25,9 @@ var evening = Int.collectInput(withPrompt: "Number of evening minutes? ",
                            maximum: nil)
 // Get weekend minutes
 print("Number of weekend minutes?")
-let weekend = Int(readLine()!)!
+let weekend = Int.collectInput(withPrompt: "Number of evening minutes? ",
+                               minimum: 0,
+                               maximum: nil)
 
 // PROCESS
 
