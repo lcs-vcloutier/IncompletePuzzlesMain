@@ -18,11 +18,11 @@ print("===========")
 // Get lower limit of range
 let lower = Int.collectInput(withPrompt: "Enter lower limit of range",
                            minimum: 0,
-                           maximum: nil)
+                           maximum: 1000)
 // Get upper limit of range
 let upper = Int.collectInput(withPrompt: "Enter upper limit of range",
                            minimum: 0,
-                           maximum: nil)
+                           maximum: 1000)
 // Set the range
 let userRange = lower...upper
 
@@ -35,10 +35,10 @@ var rsaCount = 0
 func divisorCount(of givenNumber: Int) -> Int {
     
     // 1 is always a divisor
-    var divisorCount = 1
+    var divisorCount = 0
     
     // Start looping from 2
-    for i in 2...givenNumber {
+    for i in 1...givenNumber {
         
         // What is the remainder?
         let remainder = givenNumber % i
