@@ -28,33 +28,69 @@ let day = Int(readLine()!)!
 print("Number of evening minutes?")
 let evening = Int(readLine()!)!
 
+// Get weekend minutes
+print("Number of weekend minutes?")
+let weekend = Int(readLine()!)!
+
 // PROCESS
+class CellSell {
+    
+    init () {
+        
+    }
+    
+    static func compareCosts(day: Int, evening: Int, weekend: Int) -> String {
+        
+        // Calculate cost for plan A
+        var a = 0
+        
+        // Add daytime cost
+        if day > 100 {
+            a += (day - 100) * 25
+        }
+        
+        // Add evening cost
+        a += evening * 15
+        
+        // Add weekend cost
+        a += weekend * 20
+        
+        // Calculate cost for plan B
+        var b = 0
+        
+        // Add daytime cost
+        if day > 250 {
+            b += (day - 250) * 45
+        }
+        
+        // Add evening cost
+        b += evening * 35
+        
+        // Add weekend cost
+        b += weekend * 25
+        
+        // OUTPUT
+        var result = ""
 
-// Calculate cost for plan A
-var a = 0
-
-// Add daytime cost
-a += (day - 100) * 25
-
-// Add evening cost
-a += evening * 15
-
-// Calculate cost for plan B
-var b = 0
-
-// Add daytime cost
-b += (day - 250) * 45
-
-// Add evening cost
-b += evening * 35
-
-
-// OUTPUT
-print("Plan A costs \(a)")
-print("Plan B costs \(b)")
-
-if a > b {
-    print("Plan B is cheapest.")
-} else {
-    print("Plan A is cheapest.")
+        result += "Plan A costs \(a)\n"
+        result += "Plan B costs \(b)\n"
+        
+        if a > b {
+            result += "Plan B is cheapest."
+        } else if a == b {
+            result += "Plan A and B are the same price."
+        } else {
+            result += "Plan A is cheapest."
+        }
+        
+        // Return the result
+        return result
+        
+    }
+    
 }
+
+// Use the new class to determine the result
+print(CellSell.compareCosts(day: day,
+                            evening: evening,
+                            weekend: weekend))
