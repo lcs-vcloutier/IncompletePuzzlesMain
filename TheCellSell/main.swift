@@ -16,15 +16,15 @@ print("=============")
 // INPUT
 
 // Get daytime minutes
-var day = Int.collectInput(withPrompt: "Number of daytime minutes? ",
+var day = Int.collectInput(withPrompt: "Number of daytime minutes you will use? ",
                            minimum: 0,
                            maximum: nil)
 // Get evening minutes
-var evening = Int.collectInput(withPrompt: "Number of evening minutes? ",
+var evening = Int.collectInput(withPrompt: "Number of evening minutes you will use? ",
                            minimum: 0,
                            maximum: nil)
 // Get weekend minutes
-let weekend = Int.collectInput(withPrompt: "Number of weekend minutes? ",
+let weekend = Int.collectInput(withPrompt: "Number of weekend minutes you will use? ",
                                minimum: 0,
                                maximum: nil)
 
@@ -34,7 +34,10 @@ let weekend = Int.collectInput(withPrompt: "Number of weekend minutes? ",
 var a = 0
 
 // Add daytime cost
-a += (day - 100) * 25
+if day >= 100 {
+    a += (day - 250) * 45
+}
+else{a+=0}
 
 // Add evening cost
 a += evening * 15
