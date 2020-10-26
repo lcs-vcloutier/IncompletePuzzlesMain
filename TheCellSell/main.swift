@@ -7,6 +7,11 @@
 //  https://www.russellgordon.ca/incomplete-puzzles/the-cell-sell.pdf
 //
 //  NOTE: Puzzle adapted from material provided by the University of Waterloo.
+//
+//  Test your solution to the puzzle using this plan:
+//
+//  https://www.russellgordon.ca/incomplete-puzzles/test-plan-the-cell-sell.pdf
+//
 
 import Foundation
 
