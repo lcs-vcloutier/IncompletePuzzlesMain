@@ -22,12 +22,12 @@ class TheCellSellTests: XCTestCase {
             Plan B costs 8575
             Plan A is cheapest.
             """,
-                       CellSell.compareCosts(day: 300,
-                                             evening: 145,
-                                             weekend: 50))
+                       compareCosts(day: 300,
+                                    evening: 145,
+                                    weekend: 50))
         
     }
-
+    
     // Typical case 
     // • Daytime minutes more than free threshold for both plans
     // • Plan B is cheapest 
@@ -38,11 +38,11 @@ class TheCellSellTests: XCTestCase {
             Plan B costs 3940
             Plan B is cheapest.
             """,
-                       CellSell.compareCosts(day: 262,
-                                             evening: 90,
-                                             weekend: 10))
+                       compareCosts(day: 262,
+                                    evening: 90,
+                                    weekend: 10))
         
     }
-
+    
     
 }
