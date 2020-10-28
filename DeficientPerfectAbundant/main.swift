@@ -21,10 +21,14 @@ print("============================")
 // INPUT
 
 // Get the number to check
-let n = Int(readLine()!)!
+let n = Int.collectInput(withPrompt: "Set N:",
+                                       minimum: 1,
+                                       maximum: 32500)
 
 
 // PROCESS
+var sumOfDivisors = 0
+var typeOfNumber = ""
 
 // Determine the sum of proper divisors
 // e.g.: 6 has three proper divisors
@@ -32,8 +36,25 @@ let n = Int(readLine()!)!
 //       Since their sum is 6, 6 is a perfect number.
 for i in 1...n / 2 {
     print(i)
+    sumOfDivisors += i
+}
+print(sumOfDivisors)
+
+// Check sum of divisors against number to determine if it's perfect, deficient or abundant
+if sumOfDivisors == n {
+    typeOfNumber = "perfect"
+}
+else if sumOfDivisors >= n {
+    typeOfNumber = "deficient"
+
+}
+else if sumOfDivisors <= n {
+    typeOfNumber = "abundant"
+}
+else {
+    typeOfNumber = "uncategorized"
 }
 
-
 // OUTPUT
-print("\(n) is uncategorized at this time. It might be deficient, perfect, or abundant.")
+print("\(n) is a \(typeOfNumber) number.")
+
