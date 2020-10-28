@@ -39,12 +39,11 @@ let numberOfSpecs =  Int.collectInput(withPrompt: "How many specs will be provid
 // Get the specs for "n" different computers
 for i in 0...numberOfSpecs {
     print("Spec \(i)?")
-    //build a struct in advance itll be easier
-// no error checking needed etc, see document
+    
 }
 
 // PROCESS
 
 
 // OUTPUT
-
+print("The best computer for you is \(numberOfSpecs)")
