@@ -18,6 +18,8 @@ print("=================")
 struct ComputerScore {
     
     // Regular properties to track RAM
+    var name: String = ""
+    // Regular properties to track RAM
     var r: Int = 0
     // Regular properties to track CPU speed
     var s: Int = 0
@@ -38,6 +40,7 @@ let numberOfSpecs =  Int.collectInput(withPrompt: "How many specs will be provid
 for i in 0...numberOfSpecs {
     print("Spec \(i)?")
     //build a struct in advance itll be easier
+// no error checking needed etc, see document
 }
 
 // PROCESS
