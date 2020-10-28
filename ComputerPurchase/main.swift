@@ -37,13 +37,14 @@ struct ComputerScore {
 let numberOfSpecs =  Int.collectInput(withPrompt: "How many specs will be provided?", minimum: 0, maximum: 10)
 
 // Get the specs for "n" different computers
-for i in 0...numberOfSpecs {
-    print("Spec \(i)?")
-    
-}
+//for i in 0...numberOfSpecs - 1 {
+//    print("Spec \(i+1)?")
+//    var line1 = readLine()!
+//    print(line1)
+//}
+
 
 // PROCESS
-
 
 // OUTPUT
 print("The best computer for you is \(numberOfSpecs)")
