@@ -11,7 +11,7 @@
 import Foundation
 
 print("Winning Score")
-print("============")
+print("=============")
 
 // HINT: There are many ways to approach this puzzle.
 //       In this case, a structure provides a way to create a more readable program.
