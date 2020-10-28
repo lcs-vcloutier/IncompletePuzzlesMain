@@ -21,7 +21,7 @@ print("============================")
 // INPUT
 
 // Get the number to check
-let n = Int.collectInput(withPrompt: "Set N:",
+let n = Int.collectInput(withPrompt: "",
                                        minimum: 1,
                                        maximum: 32500)
 
