@@ -19,7 +19,6 @@ print("Deficient, Perfect, Abundant")
 print("============================")
 
 // INPUT
-
 // Get the number to check
 let n = Int.collectInput(withPrompt: "",
                                        minimum: 1,
