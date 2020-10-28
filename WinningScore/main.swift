@@ -13,11 +13,6 @@ import Foundation
 print("Winning Score")
 print("=============")
 
-// HINT: There are many ways to approach this puzzle.
-//       In this case, a structure provides a way to create a more readable program.
-
-// NOTE: The structure and logic for the puzzle remain incomplete. Where should new
-//       functionality be added?
 
 // Define a structure to represent points scored by each team
 struct GameScore {
@@ -51,6 +46,15 @@ bananas.freeThrows = Int.collectInput(withPrompt: " ", minimum: 0, maximum: 100)
 let pointSpreadAToB = apples.totalPoints - bananas.totalPoints
 
 // OUTPUT
-print(apples)
-print(bananas)
-print(pointSpreadAToB)
+if pointSpreadAToB == 0 {
+    print("T")
+}
+else if pointSpreadAToB >= 0 {
+    print("A")
+}
+else if pointSpreadAToB <= 0 {
+    print("B")
+}
+else {
+    print("ERROR")
+}
