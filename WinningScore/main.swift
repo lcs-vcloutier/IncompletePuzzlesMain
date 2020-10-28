@@ -29,9 +29,8 @@ struct GameScore {
     
     // Computed property to determine points earned
     var totalPoints: Int {
-        return threePointShots * 3
+        return threePointShots * 3 + fieldGoals * 2 + freeThrows
     }
-    
 }
 
 // Initialize an instance of the GameScore structure for each team
@@ -39,11 +38,19 @@ var apples = GameScore()
 var bananas = GameScore()
 
 // INPUT
-apples.threePointShots = Int(readLine()!)!
-apples.fieldGoals = Int(readLine()!)!
+// Get apples data
+apples.threePointShots = Int.collectInput(withPrompt: "", minimum: 0, maximum: 100)
+apples.fieldGoals = Int.collectInput(withPrompt: "", minimum: 0, maximum: 100)
+apples.freeThrows = Int.collectInput(withPrompt: "", minimum: 0, maximum: 100)
+// Get bananas data
+bananas.threePointShots = Int.collectInput(withPrompt: " ", minimum: 0, maximum: 100)
+bananas.fieldGoals = Int.collectInput(withPrompt: " ", minimum: 0, maximum: 100)
+bananas.freeThrows = Int.collectInput(withPrompt: " ", minimum: 0, maximum: 100)
 
 // PROCESS
 let pointSpreadAToB = apples.totalPoints - bananas.totalPoints
 
 // OUTPUT
-
+print(apples)
+print(bananas)
+print(pointSpreadAToB)
