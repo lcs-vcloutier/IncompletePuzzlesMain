@@ -25,30 +25,27 @@ let n = Int.collectInput(withPrompt: "Set N:",
                                        minimum: 1,
                                        maximum: 32500)
 
-
 // PROCESS
-var sumOfDivisors = 0
-var typeOfNumber = ""
-
-// Determine the sum of proper divisors
-// e.g.: 6 has three proper divisors
-//       1, 2, 3
-//       Since their sum is 6, 6 is a perfect number.
-for i in 1...n / 2 {
-    print(i)
-    sumOfDivisors += i
+func divisors(number: Int) -> [Int] {
+    // Range of all potential numbers
+    let potentialDivisors = (1..<number)
+    // Find all proper divisors
+    return potentialDivisors.filter { divisor in
+        number % divisor == 0
+    }
 }
-print(sumOfDivisors)
+
+var sumOfDivisors = divisors(number: n).reduce(0, +) // Divisors func and add each item of the array into an Int
+var typeOfNumber = ""
 
 // Check sum of divisors against number to determine if it's perfect, deficient or abundant
 if sumOfDivisors == n {
     typeOfNumber = "perfect"
 }
-else if sumOfDivisors >= n {
-    typeOfNumber = "deficient"
-
-}
 else if sumOfDivisors <= n {
+    typeOfNumber = "deficient"
+}
+else if sumOfDivisors >= n {
     typeOfNumber = "abundant"
 }
 else {
