@@ -36,6 +36,15 @@ for i in 0...numberOfSpecs {
     getInput(arrayName: "array\(i)", inputName: "input\(i)")
 }
 
-var testVar = specs.values.max()
+// Find key of largest number in the dictionary
+var largest = 0
+var nameOfLargest = ""
+for (key, value) in specs {
+    if value >= largest {
+        largest = value
+        nameOfLargest = key
+    }
+}
+
 //OUTPUT
-print("The best computer for you \(specs[testVar])")
+print("The best computer for you \(nameOfLargest)")
