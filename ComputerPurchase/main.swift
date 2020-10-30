@@ -31,8 +31,8 @@ func getInput(arrayName : String, inputName : String) {
 }
 
 // Get the specs for n different computers
-for i in 0...numberOfSpecs {
-    print("Spec \(i)?")
+for i in 0...numberOfSpecs - 1 {
+    print("Spec \(i+1)?")
     getInput(arrayName: "array\(i)", inputName: "input\(i)")
 }
 
