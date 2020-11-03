@@ -23,6 +23,7 @@
 		0EB21DCD2544A3D40021BC96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB21DCC2544A3D40021BC96 /* main.swift */; };
 		0EE0D95F252563ED0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D95E252563ED0090B2E0 /* main.swift */; };
 		0EE0D96C252564CB0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D96B252564CB0090B2E0 /* main.swift */; };
+		2A1A1FC02551EC840079E0B0 /* main2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1A1FBF2551EC840079E0B0 /* main2.swift */; };
 		2A7DA2012549B99A000AD11A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE606B2253F5F43001A46B6 /* Extensions.swift */; };
 		2A7DA2022549B99D000AD11A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE606B2253F5F43001A46B6 /* Extensions.swift */; };
 		2A7DA2032549B9A0000AD11A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE606B2253F5F43001A46B6 /* Extensions.swift */; };
@@ -198,6 +199,7 @@
 		0EE0D95E252563ED0090B2E0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0EE0D969252564CB0090B2E0 /* TheCellSell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheCellSell; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0D96B252564CB0090B2E0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2A1A1FBF2551EC840079E0B0 /* main2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main2.swift; sourceTree = "<group>"; };
 		2AE606B2253F5F43001A46B6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -432,6 +434,7 @@
 				0EB21DB725449AB60021BC96 /* ChipsFastFood */,
 				0EB21DCB2544A3D40021BC96 /* IconScaling */,
 				0EAE19762548EE9500667C5F /* WinningScore */,
+				2A1A1FD02551EE4A0079E0B0 /* ComputerPurchase2 */,
 				0EAE198E2548F4D200667C5F /* ComputerPurchase */,
 				0EAE19A72548F6B700667C5F /* DeficientPerfectAbundant */,
 				0EE0D94D252563B00090B2E0 /* Products */,
@@ -474,6 +477,14 @@
 				0EE0D96B252564CB0090B2E0 /* main.swift */,
 			);
 			path = TheCellSell;
+			sourceTree = "<group>";
+		};
+		2A1A1FD02551EE4A0079E0B0 /* ComputerPurchase2 */ = {
+			isa = PBXGroup;
+			children = (
+				2A1A1FBF2551EC840079E0B0 /* main2.swift */,
+			);
+			path = ComputerPurchase2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -916,6 +927,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1A1FC02551EC840079E0B0 /* main2.swift in Sources */,
 				0EAE19902548F4D200667C5F /* main.swift in Sources */,
 				2A7DA2022549B99D000AD11A /* Extensions.swift in Sources */,
 			);
